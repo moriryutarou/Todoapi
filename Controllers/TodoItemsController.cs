@@ -78,7 +78,8 @@ namespace Todoapi.Controllers
             var todoItem = new TodoItem
             {
                 IsComplete = todoItemDTO.IsComplete,
-                Name = todoItemDTO.Name
+                Name = todoItemDTO.Name,
+                Secret = todoItemDTO.Secret,
             };
 
             _context.TodoItems.Add(todoItem);
