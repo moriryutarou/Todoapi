@@ -181,7 +181,7 @@ public class TodoItemsController : ControllerBase
         return _context.TodoItems.Any(e => e.Id == id);
     }
 
-    //引数として引数としてTodo項目（TodoItem todoItem）を受け取り、
+    //引数としてTodo項目（TodoItem todoItem）を受け取り、
     //その結果としてTodo項目のDTO（Data Transfer Object)(TodoItemDTO)を返す
     private static TodoItemDTO ItemToDTO(TodoItem todoItem) =>
        //新たなTodo項目のDTO(new TodoItemDTO)を生成
