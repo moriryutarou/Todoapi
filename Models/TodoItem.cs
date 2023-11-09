@@ -1,5 +1,6 @@
 ﻿namespace Todoapi.Models
 {
+    //データベースのテーブルに対応するエンティティを表す
     public class TodoItem
     {
         public long Id { get; set; }

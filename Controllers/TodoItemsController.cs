@@ -60,7 +60,7 @@ public class TodoItemsController : ControllerBase
         {
             return NotFound();
         }
-        //見つかったTodo項目(todoItem)をDTOに変換し、結果をHTTO応答として返す。
+        //見つかったTodo項目(todoItem)をDTOに変換し、結果をHTTP応答として返す。
         return ItemToDTO(todoItem);
     }
     // </snippet_GetByID>
