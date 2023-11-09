@@ -13,7 +13,7 @@ builder.Services.AddDbContext<TodoContext>(opt =>
 //DBプロバイダとしてインメモリDBを使用するようにEntity Framework Coreを設定する
     opt.UseInMemoryDatabase("TodoList"));
 
-//エンドポイントに関する情報を後悔するサービスの登録
+//エンドポイントに関する情報を公開するサービスの登録
 builder.Services.AddEndpointsApiExplorer();
 
 //Swaggerドキュメントの生成機能をアプリケーションに追加する
