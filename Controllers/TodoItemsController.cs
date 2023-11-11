@@ -126,7 +126,6 @@ public class TodoItemsController : ControllerBase
         {
             IsComplete = todoDTO.IsComplete,
             Name = todoDTO.Name,
-            Secret = todoDTO.Secret,
         };
 
         //_contextに対して新たに作成したTodo項目(todoItem)に追加する
@@ -146,7 +145,6 @@ public class TodoItemsController : ControllerBase
             new { id = todoItem.Id },
             ItemToDTO(todoItem));
     }
-    // </snippet_Create>
 
     // DELETE: api/TodoItems/5
     [HttpDelete("{id}")]
@@ -191,6 +189,5 @@ public class TodoItemsController : ControllerBase
            Id = todoItem.Id,
            Name = todoItem.Name,
            IsComplete = todoItem.IsComplete,
-           Secret = todoItem.Secret,
        };
 }
